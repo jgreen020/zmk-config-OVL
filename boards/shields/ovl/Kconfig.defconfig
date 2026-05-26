@@ -1,0 +1,16 @@
+if SHIELD_OVL_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "OVL"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_OVL_LEFT
+
+if SHIELD_OVL_LEFT || SHIELD_OVL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_OVL_LEFT || SHIELD_OVL_RIGHT
