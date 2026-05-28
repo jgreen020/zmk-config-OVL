@@ -4,9 +4,11 @@
 #include <physical_layouts.dtsi>
 
 / {
-    ovl: ovl {
+    ovl_physical_layout: ovl_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "OVL";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   24       0     0     0>
@@ -50,14 +52,5 @@
             , <&key_physical_attrs 100 100  867  313       0     0     0>
             , <&key_physical_attrs 100 100  963  313       0     0     0>
             ;
-    };
-
-    position_map {
-        compatible = "zmk,physical-layout-position-map";
-
-        ovl {
-            physical-layout = <&ovl>;
-            positions = <>;
-        };
     };
 };
