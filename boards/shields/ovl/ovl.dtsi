@@ -42,7 +42,7 @@
             ;
     };
 
-    ovl-transform: ovl-transform {
+    ovl_transform: ovl_transform {
         // See https://zmk.dev/docs/development/hardware-integration/new-shield#matrix-transform
         // for how to configure this
         compatible = "zmk,matrix-transform";
