@@ -9,7 +9,7 @@
 / {
     chosen {
         zephyr,display = &oled;
-        zmk,physical-layout = &ovl-transform;
+        zmk,physical-layout = &ovl_physical_layout;
     };
 
     kscan: kscan {
