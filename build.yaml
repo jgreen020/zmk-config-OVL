@@ -18,6 +18,10 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
-
-board: [ "nice_nano@2.0.0//zmk" ]
-shield: [ "ovl_left", "ovl_right" ]
+include:
+  - board: nice_nano@2.0.0//zmk
+    shield: ovl_left
+    artifact-name: ovl_left
+  - board: nice_nano@2.0.0//zmk
+    shield: ovl_right
+    artifact-name: ovl_right
