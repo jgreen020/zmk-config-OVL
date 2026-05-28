@@ -9,7 +9,7 @@
 / {
     chosen {
         zephyr,display = &oled;
-        zmk,physical-layout = &ovl;
+        zmk,physical-layout = &ovl-transform;
     };
 
     kscan: kscan {
@@ -42,7 +42,7 @@
             ;
     };
 
-    default_transform: default_transform {
+    ovl-transform: ovl-transform {
         // See https://zmk.dev/docs/development/hardware-integration/new-shield#matrix-transform
         // for how to configure this
         compatible = "zmk,matrix-transform";

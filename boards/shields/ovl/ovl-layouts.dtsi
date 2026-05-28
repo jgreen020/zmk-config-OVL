@@ -7,7 +7,7 @@
     ovl_physical_layout: ovl_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "OVL";
-        transform = <&default_transform>;
+        transform = <&ovl-transform>;
         kscan = <&kscan0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
