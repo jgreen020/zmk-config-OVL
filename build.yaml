@@ -20,8 +20,8 @@
 ---
 include:
   - board: nice_nano@2.0.0//zmk
-    shield: ovl_left nice_view
+    shield: ovl_left nice_view//zmk
     artifact-name: ovl_left
   - board: nice_nano@2.0.0//zmk
-    shield: ovl_right nice_view
+    shield: ovl_right nice_view//zmk
     artifact-name: ovl_right
