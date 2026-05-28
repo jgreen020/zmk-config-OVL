@@ -17,8 +17,9 @@ features:
   - display
   - encoder
 
-requires:
-  - pro_micro
+requires: [pro_micro]
+
+exposes: [i2c_oled]
 
 siblings:
   - ovl_left

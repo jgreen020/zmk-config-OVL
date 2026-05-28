@@ -4,20 +4,60 @@
 #include <physical_layouts.dtsi>
 
 / {
-    default_layout: default_layout {
+    ovl: ovl {
         compatible = "zmk,physical-layout";
-        display-name = "Default Layout";
-        transform = <&default_transform>;
-        kscan = <&kscan>;
+        display-name = "OVL";
 
-        // Edit this to define the positions and sizes of the keys, or remove it
-        // if your keyboard will not support ZMK Studio.
-        // https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property
         keys  //                     w   h    x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100    0    0       0     0     0>
-            , <&key_physical_attrs 100 100  100    0       0     0     0>
-            , <&key_physical_attrs 100 100    0  100       0     0     0>
-            , <&key_physical_attrs 100 100  100  100       0     0     0>
+            = <&key_physical_attrs 100 100    0   24       0     0     0>
+            , <&key_physical_attrs 100 100   96   24       0     0     0>
+            , <&key_physical_attrs 100 100  193    0       0     0     0>
+            , <&key_physical_attrs 100 100  289   24       0     0     0>
+            , <&key_physical_attrs 100 100  385   48       0     0     0>
+            , <&key_physical_attrs 100 100  578   48       0     0     0>
+            , <&key_physical_attrs 100 100  674   24       0     0     0>
+            , <&key_physical_attrs 100 100  770    0       0     0     0>
+            , <&key_physical_attrs 100 100  867   24       0     0     0>
+            , <&key_physical_attrs 100 100  963   24       0     0     0>
+            , <&key_physical_attrs 100 100    0  120       0     0     0>
+            , <&key_physical_attrs 100 100   96  120       0     0     0>
+            , <&key_physical_attrs 100 100  193   96       0     0     0>
+            , <&key_physical_attrs 100 100  289  120       0     0     0>
+            , <&key_physical_attrs 100 100  385  145       0     0     0>
+            , <&key_physical_attrs 100 100  578  145       0     0     0>
+            , <&key_physical_attrs 100 100  674  120       0     0     0>
+            , <&key_physical_attrs 100 100  770   96       0     0     0>
+            , <&key_physical_attrs 100 100  867  120       0     0     0>
+            , <&key_physical_attrs 100 100  963  120       0     0     0>
+            , <&key_physical_attrs 100 100    0  217       0     0     0>
+            , <&key_physical_attrs 100 100   96  217       0     0     0>
+            , <&key_physical_attrs 100 100  193  193       0     0     0>
+            , <&key_physical_attrs 100 100  289  217       0     0     0>
+            , <&key_physical_attrs 100 100  385  241       0     0     0>
+            , <&key_physical_attrs 100 100  578  241       0     0     0>
+            , <&key_physical_attrs 100 100  674  217       0     0     0>
+            , <&key_physical_attrs 100 100  770  193       0     0     0>
+            , <&key_physical_attrs 100 100  867  217       0     0     0>
+            , <&key_physical_attrs 100 100  963  217       0     0     0>
+            , <&key_physical_attrs 100 100    0  313       0     0     0>
+            , <&key_physical_attrs 100 100   96  313       0     0     0>
+            , <&key_physical_attrs 100 100  193  337       0     0     0>
+            , <&key_physical_attrs 100 100  289  361       0     0     0>
+            , <&key_physical_attrs 100 100  385  337       0     0     0>
+            , <&key_physical_attrs 100 100  578  337       0     0     0>
+            , <&key_physical_attrs 100 100  674  361       0     0     0>
+            , <&key_physical_attrs 100 100  770  337       0     0     0>
+            , <&key_physical_attrs 100 100  867  313       0     0     0>
+            , <&key_physical_attrs 100 100  963  313       0     0     0>
             ;
+    };
+
+    position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        ovl {
+            physical-layout = <&ovl>;
+            positions = <>;
+        };
     };
 };
