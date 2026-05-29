@@ -4,12 +4,9 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "ovl-layouts.dtsi"
-
 / {
     chosen {
         zephyr,display = &oled;
-        zmk,physical-layout = &ovl_physical_layout;
         zmk,matrix-transform = &ovl_transform;
     };
 
